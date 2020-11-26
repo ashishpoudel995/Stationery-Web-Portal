@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Century Gothic;
+		}
+		.header{
+			background-color: black;
+			padding: 10px;
+			height: 45px;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+			font-family: Times New Roman;
+		}
+		ul li a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		ul li.active a{
+			background-color: #fff;
+			color: #000;
+		}
+		body{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(background3.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		table{
+			margin-top: 10%;
+		}
+		table.subs{
+			background-color: white;
+			padding: 10px;
+			height: 290px;
+			border-style: solid;
+			margin-left: 50px;
+		}
+
+		.guideline{
+			margin-left: 50px;
+			background-color: white;
+			padding: 20px;
+		}
+		label{
+			width: 200px;
+			display: inline-block;
+			text-align: left;
+			font-weight: bold;
+		}
+		.one{
+			color:blue;
+			font-family: Lora;
+			font-size: 48px;
+			font-weight: bold;
+		}
+		.two{
+			color: red;
+			font-family: Lora;
+			font-size: 48px;
+			font-weight: bold;
+		}
+		.house{
+			position: absolute;
+			z-index: -1;
+			top: 10%;
+			left: 38%;
+		}
+		.moto{
+			margin-left: 250px;
+			font-size: 28px;
+			font-family: Comic Sans Ms;
+			color: white;
+		}
+		.address{
+			margin-left: 50px;
+			margin-top: 10px;
+			width: 200px;
+			display: inline-block;
+			float: left;
+		}
+		.phoneicon{
+			width: 50px;
+			display: inline-block;
+			margin-left: 470px;
+			margin-top: 5px;
+		}
+		.phonenum{
+			display: inline-block;
+			position: absolute;
+			margin-top: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<p style="color:white;font-size: 30px; float: left;margin-left: 50px;font-family: Times New Roman;">Stationery Web Portal</p>
+		<ul>
+			<li><a href="homepage.html">Home Page</a></li>
+			<li  class="active"><a href="#">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class="house">
+		<img src="house.png" style="height: 300px;">
+	</div>
+		<table>
+		<tr>
+			<td>
+				<div id="ourlocation" class="locationmap" style="height: 300px;margin-left: 30px;">
+  				</div>
+			</td>
+			<td>
+				<br><br><br><br><br>
+				<div class="guideline">
+					<span class="one">STAY</span>&emsp;<span class="two">HOME</span>&emsp;<span class="one">STAY</span>&emsp;<span class="two">SAFE</span>
+				</div><br>
+				<div class="moto">
+					We are there for you !
+				</div>
+			</td>
+			<td>
+				<form method="post">
+					<table class="subs">
+						<th style="text-align: center;font-size: 18px; background-color: black; color:white;">Suggestions/Complaints :</th>
+						<tr><td>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" placeholder="Your Name" required>
+						</td></tr>
+						<tr><td>
+							<label for="phoneno">Phone No:</label>
+							<input type="tel" id="phoneno" name="phoneno" placeholder="Your Phone Number" required>
+						</td></tr>
+						<tr>
+							<td>
+								<label for="email">Email: </label>
+								<input type="email" id="email" name="email" placeholder="user@domain.com" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="sugcom">Suggestions/Complaints: </label>
+								<textarea id="sugcom" name="sugcom" rows="4"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" name="submit" value="Submit" style="margin-left: 250px;padding: 10px;">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<div class="address">
+		<img src="locationicon.png" style="height: 50px;">
+		<p style="color:white;">Nepal</p>
+	</div>
+	<div class="phoneicon">
+		<img src="phoneicon.png" style="height: 50px;width: 50px;">
+	</div>
+	<div class="phonenum">
+		<p style="color: white;">+977 9999999999</p>
+	</div>
+</body>
+</html>

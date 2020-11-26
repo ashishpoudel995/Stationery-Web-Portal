@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Century Gothic;
+		}
+		.header{
+			background-color: black;
+			padding: 10px;
+			height: 45px;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+			font-family: Times New Roman;
+		}
+		ul li a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		ul li.active a{
+			background-color: #fff;
+			color: #000;
+		}
+		body{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(background3.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		.title{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);	
+		}
+		.title h1{
+			color: #fff;
+			font-size: 70px;
+		}
+		.choices{
+			position: absolute;
+			top: 80%;
+			left: 68%;
+			transform: translate(-50%,-50%);
+		}
+		.a{
+			border: 1px solid #fff;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+		}
+		.a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<p style="color:white;font-size: 30px; float: left;margin-left: 50px;font-family: Times New Roman;">Stationery Web Portal</p>
+		<ul>
+			<li class="active"><a href="#">Home Page</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="userSettings.php">User Settings</a></li>
+			<li><a href="homepage.html">Log Out</a></li>
+		</ul>
+	</div>
+	<div class="title">
+		<h1>WELCOME TO STATIONERY WEB PORTAL</h1>
+	</div>
+	<div class="choices">
+		<a href="shopping.php" class="a">Start Shopping</a>
+	</div>
+</body>
+</html>

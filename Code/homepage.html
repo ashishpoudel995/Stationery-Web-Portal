@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(background.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+		}
+		ul li{
+			display: inline-block;
+			}
+		ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+		}
+		ul li a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		ul li.active a{
+			background-color: #fff;
+			color: #000;
+		}
+		.header{
+			background-color: black;
+			padding: 10px;
+			height: 45px;
+		}
+		form { 
+			border: 3px solid #f1f1f1; 
+			margin-left: 560px;
+			margin-right: 580px;
+			margin-top: 10px;
+		}
+		label{
+			font-size: 18px;
+		}
+		input[type=text], 
+		input[type=password] { 
+			width: 100%; 
+			padding: 12px 20px; 
+			margin: 8px 0; 
+			border: 1px solid #ccc; 
+			box-sizing: border-box; 
+		} 
+		input[type=submit]{ 
+			background-color: #4CAF50; 
+			color: white; 
+			padding: 14px 20px; 
+			margin: 8px 0; 
+			border: none; 
+			cursor: pointer; 
+			width: 100%; 
+		} 
+		.imgcontainer { 
+			text-align: center; 
+			margin: 24px 0 12px 0; 
+		} 
+		img.avatar { 
+			width: 40%; 
+			border-radius: 50%; 
+		} 
+		.container { 
+			padding: 18px; 
+			color:white;
+		} 
+		span.psw { 
+			float: right;
+		} 
+		a{
+			text-decoration: none;
+		}
+		.title{
+			margin-left: 650px;
+			margin-top: 50px;
+		}
+		.title h1{
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<p style="color:white;font-size: 30px; float: left;margin-left: 50px;">Stationery Web Portal</p>
+		<ul>
+			<li class="active"><a href="#">Home Page</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+		</ul>
+	</div>
+	<div class="title">
+		<h1>LOGIN FORM</h1>
+	</div>
+	<form  action="loginValidate.php" method="post"> 
+		<div class="imgcontainer"> 
+			<img src= "avatar.png" alt="Avatar" class="avatar"> 
+		</div> 
+
+		<div class="container"> 
+			<label><b>Username</b></label> <br>
+			<input type="text" placeholder="Enter Username" id="uname" name="uname" required> <br>
+
+			<label><b>Password</b></label> <br>
+			<input type="password" placeholder="Enter Password" id="psw" name="psw" required> 
+
+			<input type="submit" name="submit" value="Log In"><br>
+			<input type="checkbox" checked="checked"> Remember me 
+		</div> 
+		<div class="container" style="background-color:#f1f1f1"> 
+			<span class="psw"><p style="color:black;">Don't have an Account?&nbsp;<a href="signUp.html">Sign Up?</a></p></span> <br>
+		</div> 
+	</form> 
+</body>
+</html>

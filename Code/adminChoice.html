@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Century Gothic;
+		}
+		.header{
+			background-color: black;
+			padding: 10px;
+			height: 45px;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: #fff;
+			padding: 5px 20px;
+			border: 1px solid #fff;
+			transition: 0.6s ease;
+			font-family: Times New Roman;
+		}
+		ul li a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		ul li.active a{
+			background-color: #fff;
+			color: #000;
+		}
+		body{
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(background3.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+		}
+		.title{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);	
+		}
+		.title h1{
+			color: #fff;
+			font-size: 70px;
+		}
+		.choices{
+			position: absolute;
+			top: 60%;
+			left: 20%;
+		}
+		.a{
+			border: 1px solid #fff;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+		}
+		.b{
+			border: 1px solid #fff;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+		}
+		.a:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		.b:hover{
+			background-color: #fff;
+			color: #000;
+		}
+		.c,.d,.e{
+			border: 1px solid #fff;
+			padding: 10px 30px;
+			color: #fff;
+			text-decoration: none;
+			transition: 0.6s ease;
+		}
+		.c:hover,.d:hover,.e:hover{
+			background-color: #fff;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<p style="color:white;font-size: 30px; float: left;margin-left: 50px;font-family: Times New Roman;">Stationery Web Portal</p>
+		<ul>
+			<li class="active"><a href="#">Home Page</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+			<li><a href="homepage.html">Log Out</a></li>
+		</ul>
+	</div>
+	<div class="title">
+		<h1>ADMIN OPTIONS</h1>
+	</div>
+	<div class="choices">
+		<a href="addStock.html" class="d">Add Stock</a>
+		<a href="viewStock.php" class="a">View Stock</a>
+		<a href="updateStock.html" class="b">Update Stock</a>
+		<a href="viewOrders.php" class="c">View Pending Orders</a>
+		<a href="orderHistory.php" class="e">Order History</a>
+	</div>
+</body>
+</html>
